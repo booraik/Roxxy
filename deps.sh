@@ -50,7 +50,7 @@ fi
 
 tar -xvf $CEFTAR
 
-cd $CEFTAR
+cd $(basename $CEFTAR .tar.bz2)
 cmake .
 cd libcev_dll_wrapper
 make 
