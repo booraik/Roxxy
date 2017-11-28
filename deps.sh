@@ -34,12 +34,14 @@ git checkout 00612209fa827f1a6ad0dea498435a9cfd449624
 echo "Installing proxygen.."
 # build proxygen stuff
 ./deps.sh && ./reinstall.sh
+cd ../../
 
 echo "Installing gyp"
 git clone https://chromium.googlesource.com/external/gyp.git
 cd gyp
 sudo pip install setuptools
 sudo python setup.py install
+cd ../
 
 echo "Installing cef lib binaries"
 # Firstly pick up the compiled libs from s3!
