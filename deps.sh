@@ -52,7 +52,7 @@ tar -xvf $CEFTAR
 
 cd $CEFTAR
 cmake .
-cd libcev_dll_wrapper
+cd libcef_dll_wrapper
 make 
 cd ../../
 
